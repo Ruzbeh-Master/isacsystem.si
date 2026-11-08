@@ -11,18 +11,18 @@
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://isacsystem.si/isac-xp.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <loc>https://isacsystem.si/enquiry.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
   </url>
   <url>
     <loc>https://isacsystem.si/feedback.html</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://isacsystem.si/enquiry.html</loc>
+    <loc>https://isacsystem.si/isac-xp.html</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
+    <priority>0.8</priority>
   </url>
 </urlset>

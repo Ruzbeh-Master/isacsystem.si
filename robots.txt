@@ -1,4 +1,7 @@
 User-agent: *
 Allow: /
 
+# Keep public pages and their CSS, JavaScript, image, and video assets crawlable.
+# Do not block duplicate URLs here: crawlers must be able to read their noindex
+# and canonical tags.
 Sitemap: https://isacsystem.si/sitemap.xml
