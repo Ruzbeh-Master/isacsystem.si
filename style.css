@@ -107,3 +107,11 @@ body>header.site-header{z-index:20}
 
 /* Use visible text beside the shared mark on every page. */
 .brand::after{content:none!important}.brand-name{display:inline-block;color:#eef7ff;font:600 15px/1 var(--display);letter-spacing:-.025em;white-space:nowrap}.footer .brand-name{font-size:14px}@media(max-width:680px){.brand-name{font-size:13px}}
+
+/* Use the same flexible footer navigation row across every page. */
+.footer-links{display:flex;flex-wrap:wrap;align-items:center;gap:14px 22px}
+.footer-links a{font-size:14px;line-height:1.5}
+.footer-brand-group>p{max-width:340px;font-size:12px;line-height:1.65}
+.footer .brand-name{font-size:18px}
+img,video,iframe{max-width:100%}
+@media(min-width:681px) and (max-width:760px){.section-shell,.site-header{width:calc(100% - 38px)}.desktop-nav{gap:15px}.desktop-nav a,.header-cta{font-size:11px}.header-cta{padding:10px 11px}.brand-logo{width:46px;height:38px}.brand-name{font-size:13px}.brand-name-secondary{font-size:8px}}

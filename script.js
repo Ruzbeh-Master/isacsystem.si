@@ -120,20 +120,29 @@ window.addEventListener('resize', updateScrollTarget, { passive: true });
 backgroundVideo.addEventListener('loadedmetadata', updateScrollTarget);
 
 function scrubBackground() {
-  if (!reducedMotion.matches && Number.isFinite(backgroundVideo.duration) && backgroundVideo.duration > 0) {
-    scrollCurrent += (scrollTarget - scrollCurrent) * 0.09;
-    if (Math.abs(scrollCurrent - lastVideoTime) > 0.04) {
-      try {
-        backgroundVideo.currentTime = scrollCurrent;
-        lastVideoTime = scrollCurrent;
-      } catch { /* The browser may still be seeking the previous frame. */ }
-    }
+  if (document.hidden || reducedMotion.matches || !Number.isFinite(backgroundVideo.duration) || backgroundVideo.duration <= 0) return;
+  scrollCurrent += (scrollTarget - scrollCurrent) * 0.09;
+  if (Math.abs(scrollCurrent - lastVideoTime) > 0.04) {
+    try {
+      backgroundVideo.currentTime = scrollCurrent;
+      lastVideoTime = scrollCurrent;
+    } catch { /* The browser may still be seeking the previous frame. */ }
   }
-  requestAnimationFrame(scrubBackground);
+  if (Math.abs(scrollCurrent - scrollTarget) > 0.1) requestAnimationFrame(scrubBackground);
 }
 
 updateScrollTarget();
-requestAnimationFrame(scrubBackground);
+window.addEventListener('scroll', () => requestAnimationFrame(scrubBackground), { passive: true });
+window.addEventListener('resize', updateScrollTarget, { passive: true });
+document.addEventListener('visibilitychange', () => {
+  if (!document.hidden) {
+    updateScrollTarget();
+    requestAnimationFrame(scrubBackground);
+  }
+});
+reducedMotion.addEventListener?.('change', () => {
+  if (!reducedMotion.matches) requestAnimationFrame(scrubBackground);
+});
 
 
 const signalExamples = {

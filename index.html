@@ -38,10 +38,25 @@
     ]
   }
   </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {"@type":"Question","name":"What is ISAC Systems?","acceptedAnswer":{"@type":"Answer","text":"ISAC Systems is a capability intelligence ecosystem developed by Master Research & Development Institute (MRDI) in Surat, India. It combines structured learning through ISAC.SI with experience-based capability profiling through ISAC.XP."}},
+      {"@type":"Question","name":"How are ISAC.SI and ISAC.XP different?","acceptedAnswer":{"@type":"Answer","text":"ISAC.SI is a structured learning platform for students and teams in MRDI programs. ISAC.XP helps people map and communicate their capability through an AI-guided profile. They focus on different parts of the learning journey."}},
+      {"@type":"Question","name":"Can I try ISAC.XP without joining an MRDI program?","acceptedAnswer":{"@type":"Answer","text":"Yes. ISAC.XP is open to learners and professionals; start by building a free profile. ISAC.SI access is part of MRDI’s enrolled, structured programs."}},
+      {"@type":"Question","name":"What does the Learning Capability Index look at?","acceptedAnswer":{"@type":"Answer","text":"The LCI organizes capability across six behavioral dimensions: Logic, Velocity, Stability, Consistency, Recall, and Confidence."}},
+      {"@type":"Question","name":"Where is ISAC Systems based?","acceptedAnswer":{"@type":"Answer","text":"ISAC Systems is developed by MRDI in Surat, Gujarat, India. Contact the team at mrdi.development@gmail.com or +91 89056 36766."}},
+      {"@type":"Question","name":"Can colleges or employers work with MRDI on ISAC?","acceptedAnswer":{"@type":"Answer","text":"MRDI welcomes conversations with institutions and industry partners about structured learning and capability profiling. Get in touch to discuss your context."}}
+    ]
+  }
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="hero-video.css" />
   <link rel="stylesheet" href="media-library.css" />
   <link rel="stylesheet" href="feedback.css" />
   <script>
@@ -55,7 +70,7 @@
 </head>
 <body>
   <div class="video-bg-container" aria-hidden="true">
-    <video muted playsinline preload="auto" id="bg-video" tabindex="-1">
+    <video muted playsinline preload="metadata" id="bg-video" tabindex="-1">
       <source src="assets/brain-formation.mp4" type="video/mp4" />
     </video>
     <div class="video-bg-overlay"></div>
@@ -70,7 +85,14 @@
   <main>
     <section class="hero section-shell" id="home">
       <div class="hero-copy reveal"><div class="eyebrow"><span class="pulse"></span> A CAPABILITY INTELLIGENCE ECOSYSTEM</div><h1>Measure what<br/>really <span>matters.</span></h1><p class="hero-sub">Beyond grades. Beyond theory.<br/><strong>Real capability.</strong></p><p class="hero-body">A new way to see how engineering students learn, grow, and show up in the real world.</p><div class="hero-actions"><a class="button button-dark" href="#ecosystem">Explore the system <span>↘</span></a><a class="text-link" href="#journey">See how it works <span>→</span></a></div><div class="hero-note"><span class="note-dash"></span> BUILT AT MRDI · VALIDATED THROUGH SVNIT SURAT SSIP 2.0</div></div>
-      <div class="hero-art reveal" aria-label="ISAC capability constellation, showing learning and experience connected to a shared capability profile"><div class="art-grid"></div><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="orbit orbit-three"></div><div class="art-core"><span>ISAC</span><small>CAPABILITY<br/>INTELLIGENCE</small><i>↗</i></div><div class="float-card card-si"><span class="card-dot lime"></span><div><small>STRUCTURED LEARNING</small><b>ISAC<span>.SI</span></b></div><span class="card-arrow">↗</span></div><div class="float-card card-xp"><span class="card-dot violet"></span><div><small>EXPERIENCE INTELLIGENCE</small><b>ISAC<span>.XP</span></b></div><span class="card-arrow">↗</span></div><span class="art-coordinate coord-one">21°10′N</span><span class="art-coordinate coord-two">72°49′E</span><div class="art-index">01 <span>—</span> 02</div></div>
+      <div class="hero-art hero-media-frame scroll-video-frame reveal" data-scroll-video>
+        <video id="hero-intro-video" controls playsinline preload="auto" aria-label="ISAC Systems introduction video; audio may require viewer permission">
+          <source src="assets/isac-homepage-intro.mp4" type="video/mp4" />
+          Your browser does not support the video. Please use the playback controls to try again.
+        </video>
+        <button class="hero-video-play" type="button" aria-controls="hero-intro-video"><span aria-hidden="true">♫</span> Enable sound</button>
+        <span class="hero-video-caption">ISAC SYSTEMS · INTRODUCTION</span>
+      </div>
       <a class="scroll-cue" href="#ecosystem"><span class="scroll-line"></span> SCROLL TO EXPLORE</a>
     </section>
 
@@ -78,8 +100,8 @@
 
     <section class="ecosystem section-shell section-pad" id="ecosystem"><div class="section-head reveal"><div><div class="eyebrow">01 / THE ECOSYSTEM</div><h2>Two platforms.<br/><span>One clearer picture.</span></h2></div><p>Learning and experience have always belonged together. ISAC gives each its own purpose — then brings the whole capability story into focus.</p></div>
       <div class="product-grid">
-        <article class="product-card si-card reveal"><div class="product-top"><span class="product-kicker">01 — LEARNING INTELLIGENCE</span><span class="corner-arrow">↗</span></div><div class="product-title"><span class="product-mark mark-si"><img src="assets/isac-si-logo.png" alt="ISAC.SI logo" loading="lazy"></span><div><h3>ISAC.SI</h3><p>Structured Intelligence</p></div></div><p class="product-desc">MRDI’s cohort-based learning platform tracks capability milestones, workshop assignments, tutor verification, and project readiness in one structured learning flow.</p><div class="product-video-window si-video-window"><div class="product-video-label"><span>ISAC.SI</span><small>PLATFORM INTRODUCTION</small></div><video class="ecosystem-card-video" autoplay muted loop controls playsinline preload="metadata" aria-label="ISAC.SI platform introduction video"><source src="assets/isac/isac-si-promo-video.mp4" type="video/mp4" /></video></div><ul class="feature-list"><li><span>↗</span> Role-based learning dashboards</li><li><span>↗</span> Milestone, attendance &amp; task tracking</li><li><span>↗</span> Cohort, module &amp; assignment management</li></ul><a class="product-link" href="isac-si-tech.html">Explore ISAC.SI <span>↗</span></a><a class="product-link product-link-secondary" href="enquiry.html?interest=ISAC.SI%20access">Enquire for access <span>↗</span></a></article>
-        <article class="product-card xp-card reveal"><div class="product-top"><span class="product-kicker">02 — EXPERIENCE INTELLIGENCE</span><span class="corner-arrow">↗</span></div><div class="product-title"><span class="product-mark mark-xp"><img src="assets/isac-xp-logo.png" alt="ISAC.XP logo" loading="lazy"></span><div><h3>ISAC.XP</h3><p>AI Capability Profiler</p></div></div><p class="product-desc">ISAC.XP turns projects, workshop habits, self-learning, and real problem solving into an LCI profile learners can share alongside a resume or portfolio.</p><div class="product-video-window xp-video-window"><div class="product-video-label"><span>ISAC.XP</span><small>LCI CAPABILITY INTRODUCTION</small></div><video class="ecosystem-card-video" autoplay muted loop controls playsinline preload="metadata" aria-label="ISAC.XP capability introduction video"><source src="assets/isac/isac-xp-promo-video.mp4" type="video/mp4" /></video></div><ul class="feature-list"><li><span>↗</span> Conversational capability discovery</li><li><span>↗</span> Six-dimension LCI profile</li><li><span>↗</span> Shareable, recruiter-ready portfolio</li></ul><a class="product-link" href="isac-xp.html">Explore ISAC.XP <span>↗</span></a><a class="product-link product-link-secondary" href="isac-xp.html#profile-guide">Read the profile guide <span>↗</span></a><a class="product-link product-link-secondary" href="isac-xp.html#xp-media">Watch the product demo <span>↗</span></a></article>
+        <article class="product-card si-card reveal"><div class="product-top"><span class="product-kicker">01 — LEARNING INTELLIGENCE</span><span class="corner-arrow">↗</span></div><div class="product-title"><span class="product-mark mark-si"><img src="assets/isac-si-logo.png" alt="ISAC.SI logo" loading="lazy"></span><div><h3>ISAC.SI</h3><p>Structured Intelligence</p></div></div><p class="product-desc">MRDI’s cohort-based learning platform tracks capability milestones, workshop assignments, tutor verification, and project readiness in one structured learning flow.</p><div class="product-video-window si-video-window"><div class="product-video-label"><span>ISAC.SI</span><small>PLATFORM INTRODUCTION</small></div><video class="ecosystem-card-video" controls playsinline preload="none" poster="assets/isac-si-logo.png" aria-label="ISAC.SI platform introduction video"><source src="assets/isac/isac-si-promo-video.mp4" type="video/mp4" /></video></div><ul class="feature-list"><li><span>↗</span> Role-based learning dashboards</li><li><span>↗</span> Milestone, attendance &amp; task tracking</li><li><span>↗</span> Cohort, module &amp; assignment management</li></ul><a class="product-link" href="isac-si-tech.html">Explore ISAC.SI <span>↗</span></a><a class="product-link product-link-secondary" href="enquiry.html?interest=ISAC.SI%20access">Enquire for access <span>↗</span></a></article>
+        <article class="product-card xp-card reveal"><div class="product-top"><span class="product-kicker">02 — EXPERIENCE INTELLIGENCE</span><span class="corner-arrow">↗</span></div><div class="product-title"><span class="product-mark mark-xp"><img src="assets/isac-xp-logo.png" alt="ISAC.XP logo" loading="lazy"></span><div><h3>ISAC.XP</h3><p>AI Capability Profiler</p></div></div><p class="product-desc">ISAC.XP turns projects, workshop habits, self-learning, and real problem solving into an LCI profile learners can share alongside a resume or portfolio.</p><div class="product-video-window xp-video-window"><div class="product-video-label"><span>ISAC.XP</span><small>LCI CAPABILITY INTRODUCTION</small></div><video class="ecosystem-card-video" controls playsinline preload="none" poster="assets/isac-xp-logo.png" aria-label="ISAC.XP capability introduction video"><source src="assets/isac/isac-xp-promo-video.mp4" type="video/mp4" /></video></div><ul class="feature-list"><li><span>↗</span> Conversational capability discovery</li><li><span>↗</span> Six-dimension LCI profile</li><li><span>↗</span> Shareable, recruiter-ready portfolio</li></ul><a class="product-link" href="isac-xp.html">Explore ISAC.XP <span>↗</span></a><a class="product-link product-link-secondary" href="isac-xp.html#profile-guide">Read the profile guide <span>↗</span></a><a class="product-link product-link-secondary" href="isac-xp.html#xp-media">Watch the product demo <span>↗</span></a></article>
       </div>
     </section>
 
@@ -109,6 +131,7 @@
 
   <footer class="footer section-shell"><div class="footer-brand-group"><a class="brand" href="#home" aria-label="ISAC Systems home"><img class="brand-logo" src="assets/isac-systems-logo-light.png" alt="ISAC Systems" /><span class="brand-name"><span>ISAC</span><span class="brand-name-secondary">Systems</span></span></a><p>Capability Enhancing System, Built for Future Education and Hiring Ecosystem</p><p>Developed by Master Research And Development Institute, Surat, Gujarat-India</p></div><div class="footer-links"><a href="index.html#ecosystem">Ecosystem</a><a href="isac-si-tech.html">ISAC.SI</a><a href="isac-xp.html">ISAC.XP</a><a href="index.html#journey">Journey</a><a href="feedback.html">Feedback</a><a href="enquiry.html">Enquire</a><a href="https://www.mrdiskills.com" target="_blank" rel="noopener noreferrer">MRDI <span>↗</span></a></div><a class="footer-mail" href="mailto:mrdi.development@gmail.com">LET'S TALK <span>↗</span><br/><small>mrdi.development@gmail.com</small></a><div class="footer-bottom"><span>© <span id="year"></span> ISAC SYSTEMS · MASTER RESEARCH &amp; DEVELOPMENT INSTITUTE</span><a href="#home">BACK TO TOP ↑</a></div></footer>
   <script src="script.js"></script>
+  <script src="hero-video.js"></script>
   <script src="feedback.js"></script>
 </body>
 </html>

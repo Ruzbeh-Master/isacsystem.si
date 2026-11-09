@@ -37,10 +37,12 @@
 
   if (video && document.body.classList.contains('si-page')) {
     video.pause();
+    const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
     let duration = 0;
     let targetTime = 0;
     let currentTime = 0;
     let lastSetTime = 0;
+    let renderQueued = false;
     const smoothingFactor = 0.08;
 
     const updateDuration = () => { duration = Number.isFinite(video.duration) ? video.duration : 0; };
@@ -49,8 +51,16 @@
       const maxScroll = Math.max(1, document.documentElement.scrollHeight - window.innerHeight);
       const progress = Math.min(1, Math.max(0, window.scrollY / maxScroll));
       targetTime = progress * Math.max(0, duration - 0.08);
+      requestRender();
+    };
+    const requestRender = () => {
+      if (renderQueued || reducedMotion.matches || document.hidden) return;
+      renderQueued = true;
+      window.requestAnimationFrame(renderFlow);
     };
     const renderFlow = () => {
+      renderQueued = false;
+      if (reducedMotion.matches || document.hidden) return;
       if (duration) {
         currentTime += (targetTime - currentTime) * smoothingFactor;
         // Keep the seek cadence gentle so the browser's video decoder stays smooth.
@@ -58,8 +68,8 @@
           video.currentTime = currentTime;
           lastSetTime = currentTime;
         }
+        if (Math.abs(targetTime - currentTime) > 0.12) requestRender();
       }
-      window.requestAnimationFrame(renderFlow);
     };
     video.addEventListener('loadedmetadata', () => {
       updateDuration();
@@ -71,7 +81,9 @@
     }
     window.addEventListener('scroll', updateTarget, { passive: true });
     window.addEventListener('resize', updateTarget, { passive: true });
-    window.requestAnimationFrame(renderFlow);
+    document.addEventListener('visibilitychange', updateTarget);
+    reducedMotion.addEventListener?.('change', updateTarget);
+    requestRender();
   } else if (video) {
     // Keep ISAC.XP's current section-proportional background scrub behavior.
     video.pause();
