@@ -4,6 +4,8 @@ document.querySelectorAll('[data-scroll-video]').forEach((heroVideoFrame) => {
   if (!heroIntroVideo || !heroVideoPlay) return;
 
   let heroVideoInView = false;
+  let hasStartedOnce = false;
+  let initialStartTimer = 0;
 
   async function startHeroVideo() {
     if (!heroVideoInView || document.hidden) return;
@@ -34,8 +36,20 @@ document.querySelectorAll('[data-scroll-video]').forEach((heroVideoFrame) => {
     for (const entry of entries) {
       heroVideoInView = entry.isIntersecting && entry.intersectionRatio >= 0.2;
       if (heroVideoInView) {
-        startHeroVideo();
+        if (hasStartedOnce) {
+          startHeroVideo();
+        } else if (!initialStartTimer) {
+          // Give the page's first paint a short head start before fetching the large hero video.
+          initialStartTimer = window.setTimeout(() => {
+            initialStartTimer = 0;
+            if (!heroVideoInView) return;
+            hasStartedOnce = true;
+            startHeroVideo();
+          }, 900);
+        }
       } else {
+        window.clearTimeout(initialStartTimer);
+        initialStartTimer = 0;
         heroIntroVideo.pause();
       }
     }
