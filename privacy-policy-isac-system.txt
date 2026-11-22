@@ -1,0 +1,93 @@
+ISAC SYSTEM WEBSITE PRIVACY POLICY
+
+Last updated: 22 November 2026
+Website: https://www.isacsystem.si/
+
+1. WHO WE ARE AND WHAT THIS POLICY COVERS
+
+This Privacy Policy describes how the Master Research & Development Institute (MRDI), Surat, Gujarat, India ("MRDI", "we", "us" or "our"), handles personal data when you visit the ISAC System website at https://www.isacsystem.si/ (the "Website"), use its enquiry or feedback features, or contact us about ISAC System. ISAC System is the name used for MRDI's education and capability products, including ISAC.SI and ISAC.XP.
+
+This Policy is focused on the public Website and its contact and feedback features. If you use ISAC.SI, ISAC.XP, or another MRDI service that collects account, learning, assessment, project, or profile information, additional notices and terms may apply to that service. Please review those notices when they are presented. This Policy does not replace them.
+
+2. PERSONAL DATA WE HANDLE
+
+The information we handle depends on how you use the Website:
+
+• Enquiries: The enquiry form asks for your name, email address, phone number, area of interest, and optionally your academic background, referral source, and message.
+• Feedback: The feedback form asks for your role, the product or service you are commenting on, and your feedback. Name and email are optional.
+• Messages you send us: If you contact us by email, phone, or WhatsApp, we handle the contact details and message contents you choose to provide, together with information needed to respond.
+• Website and device information: The Website uses Google Analytics and Vercel Web Analytics and Speed Insights scripts on pages where they are installed. These tools may collect information such as pages viewed, interactions, approximate location, device and browser information, referral source, and network identifiers, using cookies or similar technologies where applicable. Google Fonts and other website resources may also receive basic connection information when your browser loads them.
+• Technical and security records: Our hosting and service providers may generate server, diagnostic, and security logs, such as IP address, request time, and requested page, to deliver, protect, and troubleshoot the Website.
+
+Please do not include sensitive personal information in an enquiry or feedback message unless it is necessary. The Website is not intended for submitting confidential documents or sensitive personal data.
+
+3. HOW THE WEBSITE FORMS WORK
+
+The enquiry and feedback forms run in your browser. When you submit a form, the Website prepares a message and opens WhatsApp with the message filled in for your review. The Website code does not itself send the message. It is sent to MRDI only if you choose to send it in WhatsApp. WhatsApp is operated by a third party and its own terms and privacy policy apply to your use of that service. You can close WhatsApp without sending the message.
+
+If you instead contact MRDI directly by email or phone, your communications are handled by the relevant email, telephone, or messaging provider as well as by MRDI.
+
+4. WHY WE USE PERSONAL DATA
+
+We use personal data, as appropriate, to:
+
+• operate, maintain, secure, and improve the Website;
+• understand Website traffic and performance;
+• respond to enquiries, feedback, and requests;
+• communicate about MRDI, ISAC System, programs, or services where you have asked us to do so or where otherwise permitted;
+• prevent abuse, investigate technical issues, and protect our rights and users; and
+• meet legal obligations and handle disputes.
+
+We do not use Website enquiry or feedback data to create an ISAC.XP capability profile or make a learning or hiring assessment through this Website. If you use a separate ISAC service, that service's notice explains its data use.
+
+5. COOKIES AND ANALYTICS
+
+The Website uses Google Analytics and Vercel Web Analytics and Speed Insights to measure visits and performance. These services may use cookies, local storage, or similar technologies, depending on their configuration and your browser. Google and Vercel may process technical and usage information as service providers under their own privacy terms. The Website also loads fonts and other resources from third-party domains, which may receive connection information.
+
+You can review or remove cookies using your browser settings and use available browser controls to limit tracking. Blocking cookies or scripts may affect some Website features or analytics. Where applicable law requires consent before optional tracking technologies are used, we will seek that consent through an appropriate mechanism. Browser controls alone may not stop all forms of measurement.
+
+6. WHEN WE SHARE DATA
+
+We do not sell personal data. We may share it, to the extent reasonably needed, with:
+
+• MRDI personnel who handle Website operations, enquiries, feedback, or support;
+• service providers that host, secure, maintain, or measure the Website, including Google, Vercel, and communication providers you choose to use;
+• WhatsApp, if you choose to open and send a prepared enquiry or feedback message through it; and
+• authorities or other parties where disclosure is required by law or reasonably necessary to protect people, our services, or our legal rights.
+
+Service providers may process information in countries other than the country where you are located. Applicable privacy laws may provide safeguards for international transfers. The privacy practices of third-party services are governed by their own notices and terms.
+
+7. RETENTION AND SECURITY
+
+We keep personal data only for as long as reasonably needed for the purposes described in this Policy, including responding to you, maintaining appropriate records, resolving disputes, and meeting legal requirements. The period depends on the type of information and the context in which it was collected. Analytics and hosting providers may retain their own records under their retention practices.
+
+We use reasonable technical and organizational measures intended to protect data in our care. No internet transmission or storage system can be guaranteed to be completely secure.
+
+8. YOUR PRIVACY CHOICES AND RIGHTS
+
+Depending on your location and the law that applies, you may have rights to request access to, correction of, or deletion of personal data; to withdraw consent where processing relies on consent; or to raise a complaint. Some rights are subject to legal limits and identity verification. You can also choose not to submit an enquiry or feedback form, and can close the WhatsApp message without sending it.
+
+To make a privacy request or raise a concern, email MRDI at mrdi.development@gmail.com with the subject "Privacy request". Please describe your request and how you interacted with the Website. We may ask for information to verify your identity. We will respond in accordance with applicable law. If your request concerns data held by WhatsApp, Google, Vercel, or another provider in its own capacity, you may also need to contact that provider.
+
+9. CHILDREN
+
+The Website is intended for a general audience interested in education, engineering, and professional development; it is not designed to invite children to submit personal data directly. Where a separate MRDI education program or service involves a child, MRDI will handle that service's data in accordance with applicable legal requirements and any applicable program-specific notice. A parent or guardian who believes a child has submitted personal data to us can contact us using the details below.
+
+10. THIRD-PARTY SITES AND SERVICES
+
+The Website may link to or open third-party services, including WhatsApp and MRDI's other websites or platforms. We do not control those services. Their own privacy notices and terms govern how they handle information. Review those notices before providing information to them.
+
+11. CHANGES TO THIS POLICY
+
+We may update this Policy when the Website, our practices, or applicable requirements change. The "Last updated" date above shows when this version was prepared. The current version will be published on or linked from the Website.
+
+12. CONTACT
+
+For questions about this Policy or a privacy request, contact:
+
+Master Research & Development Institute (MRDI)
+Surat, Gujarat, India
+Email: mrdi.development@gmail.com
+Telephone: +91 89056 36766
+
+This Policy is a general description of the Website's observed features and is not a substitute for notices that may apply to other MRDI services.
