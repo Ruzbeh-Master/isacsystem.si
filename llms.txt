@@ -2,7 +2,7 @@
 
 > Official website: https://isacsystem.si/
 
-ISAC Systems (also referred to as ISACSystem) is a capability intelligence ecosystem developed by Master Research & Development Institute (MRDI) in Surat, Gujarat, India. It supports engineering education through structured cohort learning and practical capability profiles.
+ISAC Systems (also referred to as ISACSystem) is a capability intelligence ecosystem developed by Master Research & Development Institute (MRDI) in Surat, Gujarat, India. It supports engineering education through structured cohort learning and practical capability profiles. ISAC.XP capability mapping uses the Integrated Learning Capability Index (LCI) Adaptive Assessment Engine, a registered computer software work developed as a core component of ISAC Integrated System Assistance. Copyright certificate No. SW-2026024056 lists Mr. Ruzbeh Master as author and Master Research and Development Institute LLP as owner and publisher; registration date: 29 October 2026.
 
 ## Official pages
 
